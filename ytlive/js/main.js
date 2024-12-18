@@ -10,114 +10,114 @@ new Vue({
       {
         img: "./assets/img/1.webp",
         nome: "Lia",
-        texto: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+        texto: "This changed my life completely… can’t believe the results!",
       },
       {
         img: "./assets/img/2.webp",
         nome: "Herbert",
         texto:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+          "thank youu my pain is GONE. Unreal!",
       },
       {
         img: "./assets/img/3.webp",
         nome: "Raul",
         texto:
-          "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+          "Just tried it last night and I already feel different",
       },
       {
         img: "./assets/img/4.webp",
         nome: "Maria R.",
         texto:
-          " It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+          " how is this not all over the news ",
       },
       {
         img: "./assets/img/5.webp",
         nome: "Selenna",
-        texto: " It has survived not only five centurie.",
+        texto: " Best thing I’ve found for energy and pain relief. Hands down!",
       },
       {
         img: "./assets/img/6.webp",
         nome: "Ester R",
         texto:
-          " It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+          " My husband has been using this for two days and is blown away!",
       },
       {
         img: "./assets/img/7.webp",
         nome: "Love2",
         texto:
-          "he release of Letraset sheets containing Lorem Ipsum passages, and more recently  ",
+          " Thank you Pastor Matthew, for sharing this with us ",
       },
       {
         img: "./assets/img/8.webp",
         nome: "Brunno",
         texto:
-          "Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+          "Are these results permanent? Anyone else tried this?",
       },
       {
         img: "./assets/img/9.webp",
         nome: "Leo",
-        texto: "Finibus Bonorum et Malorum",
+        texto: "Can’t believe how many people are seeing results with this",
       },
       {
         img: "./assets/img/10.webp",
         nome: "Cleo M.",
-        texto: "Lorem ipsum dolor sit amet...",
+        texto: "If this works for me, I’m telling everyone I know",
       },
       {
         img: "./assets/img/11.webp",
         nome: "Lady L.",
         texto:
-          "combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.",
+          "I never thought I’d feel this good again",
       },
       {
         img: "./assets/img/12.webp",
         nome: "The Weed",
         texto:
-          "The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+          "Thank u <3",
       },
       {
         img: "./assets/img/13.webp",
         nome: "Michael",
-        texto: "Sections 1.10.32 and 1.10.33 from ",
+        texto: "So glad I found this before the page got taken down!",
       },
       {
         img: "./assets/img/14.webp",
         nome: "Roque",
-        texto: "The standard Lorem Ipsum passage, used since the 1500s",
+        texto: "He deserves a Nobel Prize for this. Seriously",
       },
       {
         img: "./assets/img/15.webp",
         nome: "Thiago",
-        texto: "Section 1.10.32 of",
+        texto: "My grandma started using it last week, and her joint pain is almost gone. This is unreal",
       },
       {
         img: "./assets/img/16.webp",
         nome: "Rodrygo ",
         texto:
-          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+          "Can someone confirm if this worked for them?",
       },
       {
         img: "./assets/img/17.webp",
         nome: "DJ Trash",
         texto:
-          "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          "I’m usually skeptical, but my best friend swore by it, and now I get it. This works!",
       },
       {
         img: "./assets/img/18.webp",
         nome: "Alone",
         texto:
-          "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects",
+          "Just finished the video, and I’m about to try it tonight. Fingers crossed",
       },
       {
         img: "./assets/img/19.webp",
         nome: "Mixely",
         texto:
-          " give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects",
+          " I’m honestly speechless",
       },
       {
         img: "./assets/img/20.webp",
         nome: "Pale Man",
-        texto: "Opa!",
+        texto: "Yesss! Thank youu",
       },
     ],
 
