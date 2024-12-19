@@ -1,22 +1,8 @@
 <!DOCTYPE html><html><head>
-	<script>
-    var urlBackRedirect = 'https://healingnews.online/quizlive/'; // lembre-se de usar a url sem espaços
-    // não altere nada abaixo dessa linha
-    urlBackRedirect = urlBackRedirect = urlBackRedirect.trim() +
-            (urlBackRedirect.indexOf("?") > 0 ? '&' : '?') +
-            document.location.search.replace('?', '').toString();
-    history.pushState({}, "", location.href);
-    history.pushState({}, "", location.href);
-    window.onpopstate = function () {
-        setTimeout(function () {
-            location.href = urlBackRedirect;
-        }, 1);
-    };
-</script>
 
 
 	<meta charset="utf-8">
-	<title>Presell</title>
+	<title>Quiz</title>
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 		<link rel="canonical" href="https://scoreboosternow.com/presell">
 		<meta id="viewport-meta" name="viewport" content="width=device-width">
