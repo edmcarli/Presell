@@ -228,19 +228,27 @@
 	</section>
 
 <script>
-    var urlBackRedirect = 'https://www.google.com/'; // lembre-se de usar a url sem espaços
-    // não altere nada abaixo dessa linha
-    urlBackRedirect = urlBackRedirect = urlBackRedirect.trim() +
-            (urlBackRedirect.indexOf("?") > 0 ? '&' : '?') +
-            document.location.search.replace('?', '').toString();
+    var urlBackRedirect = 'https://www.google.com/'; // Ensure the URL has no spaces
+    // Process the URL properly with query parameters
+    urlBackRedirect = urlBackRedirect.trim() +
+        (urlBackRedirect.indexOf("?") > 0 ? '&' : '?') +
+        document.location.search.replace('?', '').toString();
+    
+    // Push the current state into history twice to allow back navigation handling
     history.pushState({}, "", location.href);
     history.pushState({}, "", location.href);
-    window.onpopstate = function () {
-        setTimeout(function () {
-            location.href = urlBackRedirect;
-        }, 1);
+
+    // Handle the back button event
+    window.onpopstate = function (event) {
+        // Check if the event is due to back navigation
+        if (event.state !== null) {
+            setTimeout(function () {
+                location.href = urlBackRedirect;
+            }, 1);
+        }
     };
 </script>
+
 
 	<footer class="imported-template">
 		<div class="position-relative overflow-hidden text-black p-3 footer-section text-center">
