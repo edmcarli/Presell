@@ -374,53 +374,15 @@
 
 	<script type="text/javascript" src="js/crypto-js.min.js"></script>
 	<script>
-	var url_domain = window.location.hostname;
-	console.log(url_domain);
-	// console.log(result);
-	var utm_term = undefined;
-
-	var url_string = window.location.href
-	var url = new URL(url_string);
-	var utm_campaign_value = url.searchParams.get("utm_campaign");
-	var url_domain = window.location.hostname;
-
-	if(utm_term == undefined) {
-	var utm_campaign = "xcon="+utm_campaign_value;
-	}
-	function setUrlParams2(el) {
-	var term = utm_campaign;
-	if (el.href.indexOf('#') == -1) {
-		var src = "";
-		var querystring = location.search
-		var querystring_without_int_mark = querystring.split("?", 2)[1]
-		var existsUrl = el.href;
-		var existsquerystring = existsUrl.split("?", 2)[1]
-
-		// console.log(querystring_without_int_mark, existsquerystring)
-
-		if (existsquerystring === undefined && querystring_without_int_mark !== undefined) {
-			el.href = existsUrl.split("?", 2)[0] + '?' + querystring_without_int_mark+"&"+utm_campaign;
-			return;
-		}
-		if (existsquerystring !== undefined && querystring_without_int_mark !== undefined) {
-			el.href = existsUrl.split("?", 2)[0] + '?' + existsquerystring + '&' + querystring_without_int_mark+"&"+utm_campaign;
-			return;
-		}
-		if (querystring_without_int_mark !== undefined) {
-			el.href = existsUrl.split("?", 2)[0] + '?' + existsquerystring + '&' + querystring_without_int_mark+"&"+utm_campaign;
-		}
-		if (querystring_without_int_mark == undefined && existsquerystring == undefined) {
-			el.href = existsUrl;
-		}
-		if (existsquerystring !== undefined) {
-			el.href = existsUrl;
-		}
-		console.log('url: '+existsUrl)
-	}
-	}
-	var links = document.querySelectorAll('a');
-	links.forEach(setUrlParams2);
-	</script>
-
+    window.onload = function () {
+        var links = document.getElementsByTagName("a");
+        for (var i = 0, n = links.length; i < n; i++) {
+            var href = links[i].href.trim() +
+                    (links[i].href.indexOf("?") > 0 ? '&' : '?') +
+                    document.location.search.replace('?', '').toString();
+            links[i].href = href;
+        }
+    }
+</script>
 
 </body></html>
