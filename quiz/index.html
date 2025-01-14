@@ -149,6 +149,7 @@
 
 <script src="js/player.js" async=""></script><script src="js/player.js" async=""></script></head>
 
+
 <body>
 	<main>
 		<div class="main-ct qt1">
@@ -234,28 +235,6 @@
 			</div>
 		</div>
 	</section>
-
-<script>
-    var urlBackRedirect = 'https://healingnews.online/quizlive/'; // Ensure the URL has no spaces
-    // Process the URL properly with query parameters
-    urlBackRedirect = urlBackRedirect.trim() +
-        (urlBackRedirect.indexOf("?") > 0 ? '&' : '?') +
-        document.location.search.replace('?', '').toString();
-    
-    // Push the current state into history twice to allow back navigation handling
-    history.pushState({}, "", location.href);
-    history.pushState({}, "", location.href);
-
-    // Handle the back button event
-    window.onpopstate = function (event) {
-        // Check if the event is due to back navigation
-        if (event.state !== null) {
-            setTimeout(function () {
-                location.href = urlBackRedirect;
-            }, 1);
-        }
-    };
-</script>
 
 
 	<footer class="imported-template">
@@ -379,18 +358,56 @@
 			return sec;
 		}
 	</script>
+<script>
+// Define the prefix array.
+const prefix = ["https://checkout.healingapp.online/"];
+
+// Get all UTM URL parameters.
+function getParams() {
+  const url = new URL(window.location.href);
+  const params = url.searchParams;
+  let queryParams = "";
+
+  // Loop through all search parameters.
+  for (const [key, value] of params) {
+    if (key.startsWith("utm_")) {
+      queryParams += `&${key}=${value}`;
+    }
+  }
+
+  // Return UTM parameters without the leading '&'.
+  return queryParams.length > 0 ? queryParams.substring(1) : "";
+}
+
+// Append the parameters to the href attributes of all links that match the prefix array.
+function appendParamsToLinks() {
+  const links = document.querySelectorAll("a");
+
+  links.forEach((link) => {
+    for (const prefixItem of prefix) {
+      if (link.href.indexOf(prefixItem) !== -1) {
+        const params = getParams();
+        const url = new URL(link.href);
+
+        // Prevent duplicate UTM parameters.
+        const existingParams = Array.from(url.searchParams.keys()).filter((key) =>
+          key.startsWith("utm_")
+        );
+        if (existingParams.length === 0 && params) {
+          // Append UTM parameters if they are not already present.
+          link.href += url.search ? `&${params}` : `?${params}`;
+        }
+        break;
+      }
+    }
+  });
+}
+
+// Call the appendParamsToLinks function on page load.
+window.addEventListener("load", appendParamsToLinks);
+</script>
+
 
 	<script type="text/javascript" src="js/crypto-js.min.js"></script>
-	<script>
-    window.onload = function () {
-        var links = document.getElementsByTagName("a");
-        for (var i = 0, n = links.length; i < n; i++) {
-            var href = links[i].href.trim() +
-                    (links[i].href.indexOf("?") > 0 ? '&' : '?') +
-                    document.location.search.replace('?', '').toString();
-            links[i].href = href;
-        }
-    }
-</script>
 
 </body></html>
