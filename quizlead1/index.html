@@ -1,0 +1,413 @@
+<!DOCTYPE html><html><head>
+
+<link rel="preload" href="https://scripts.converteai.net/26f2d0b0-a4bd-4f21-94a5-cbda8900ff31/players/6764937dd30d7bd0bf720f47/player.js" as="script">
+<link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
+<link rel="preload" href="https://images.converteai.net/26f2d0b0-a4bd-4f21-94a5-cbda8900ff31/players/6764937dd30d7bd0bf720f47/thumbnail.jpg" as="image">
+<link rel="preload" href="https://cdn.converteai.net/26f2d0b0-a4bd-4f21-94a5-cbda8900ff31/675cba2c55574aa441d66f22/main.m3u8" as="fetch">
+<link rel="dns-prefetch" href="https://cdn.converteai.net">
+<link rel="dns-prefetch" href="https://scripts.converteai.net">
+<link rel="dns-prefetch" href="https://images.converteai.net">
+<link rel="dns-prefetch" href="https://api.vturb.com.br">
+
+	<meta charset="utf-8">
+	<title>Quiz</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<link rel="canonical" href="https://scoreboosternow.com/presell">
+		<meta id="viewport-meta" name="viewport" content="width=device-width">
+		<meta name="application-name" content="Presell">
+		<meta name="title" content="Presell">
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="Presell">
+		<meta property="og:description" content="">
+
+	<style type="text/css">
+		@font-face { font-family: Roboto; font-style: normal; font-weight: 400;	src: url("fonts/Roboto-Regular.woff") format("woff"); font-display: swap; }
+		@font-face { font-family: Roboto; font-style: normal; font-weight: 700; src: url("fonts/Roboto-Bold.woff") format("woff"); font-display: swap; }
+		@font-face { font-family: Montserrat; font-style: normal; font-weight: 400; src: url("fonts/Montserrat-Regular.woff") format("woff"); font-display: swap; }
+		@font-face { font-family: Lato; font-style: normal; font-weight: 700; src: url("fonts/Lato-Bold.woff") format("woff"); font-display: swap; }
+		*, :after, :before { box-sizing: border-box; }
+		body { margin: 0; color: black; font-family: 'Roboto', sans-serif; }
+		img { max-width: 100%; }
+		main { max-width: 768px; text-align: center; margin: 0 auto 70px; }
+		.main-ct { font-weight: 700; }
+		.main-ct .qt-title { color: rgb(211, 42, 42); line-height: 36px; font-size: 32px; max-width: 660px; margin: 10px auto 20px; }
+		.main-ct .bt-q {
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+			justify-content: center;
+			text-decoration: none;
+			font-family: 'Lato', sans-serif;
+			padding: 1rem 1px;
+			font-size: 24px;
+			font-weight: 700;
+			color: white;
+			max-width: 640px;
+			margin: 0 auto 24px;
+			background-color: rgb(42, 211, 83);
+			border: 3px solid black;
+		}
+		.main-ct .bt-q span { font-size: 80%; }
+		.main-ct.qt1 .bt-q { max-width: 430px; }
+		.main-ct { padding-top: 10px; }
+		.main-ct .qt-text { line-height: 26px; font-size: 25px; margin: 0 auto 20px; max-width: 690px; }
+		.main-ct a.dlg { display: block; margin: 0 auto; text-align: left; line-height: 24px; font-size: 20px; font-weight: 400; max-width: 690px; color: black; }
+		.main-ct a.ref { display: block; margin: 0 auto 20px; line-height: 29px; font-size: 24px; text-decoration: none; color: black; }
+		.dsclmer { line-height: 24px; font-size: 20px; color: rgb(211, 42, 42); margin-top: 60px; }
+		.bt-watch {
+			display: block;
+			font-family: "Roboto", Sans-serif;
+			font-size: 30px;
+			font-weight: 600;
+			line-height: 1;
+			width: fit-content;
+			background-color: #30DD47;
+			color: white;
+			text-decoration: none;
+			border-radius: 0px;
+			margin: 10px auto 80px;
+			padding: 30px 50px;
+			animation: pulse-grow;
+		}
+		.bt-watch:hover {
+			animation-name: pulse-grow;
+			animation-duration: .3s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+		footer { font-family: 'Open Sans', sans-serif; font-size: 12px; line-height: 14px; }
+		footer .ct { max-width: 788px; margin: 0 auto; text-align: center; padding: 70px 10px 24px; }
+		footer .links { text-decoration: none; }
+		footer a { color: black; }
+		@keyframes pulse-grow {
+			to {
+				transform: scale(1.1)
+			}
+		}
+		@media (max-width: 599px) {
+			main { margin: 0 auto 40px; }
+			.topb, #main-ct { padding-left: 5px; padding-right: 5px; }
+			.topb p { line-height: 16px; font-size: 14px; }
+			.main-ct .qt-title { line-height: 25px; font-size: 21px; }
+			.main-ct .qt-text { line-height: 24px; font-size: 18px; }
+			.main-ct a.bt-watch { margin: 20px auto; }
+			.main-ct a.dlg { font-size: 16px; line-height: 18px; }
+			.main-ct a.ref { line-height: 20px; font-size: 16px; }
+			.main-ct .bt-q { font-size: 18px; }
+			.dsclmer { line-height: 17px; font-size: 14px; }
+			.bt-watch { font-size: 17px; padding: 15px 30px 15px 30px; }
+			footer { font-size: 10px; }
+			footer .ct { padding: 30px 10px 14px; }
+		}
+	</style>
+
+	<link href="css/drachen.css" rel="stylesheet" type="text/css">
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+		body {
+			margin: 0;
+		}
+		.imported-template {
+			display: none;
+		}
+		@font-face {
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: 400;
+			src: url("fonts/Poppins-Regular.woff") format("woff");
+			font-display: swap;
+		}
+		@font-face {
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: 700;
+			src: url("fonts/Poppins-Bold.woff") format("woff");
+			font-display: swap;
+		}
+		@font-face {
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: 900;
+			src: url("fonts/Poppins-Black.woff") format("woff");
+			font-display: swap;
+		}
+		.winner-text {
+			max-width: 600px;
+			margin: 3rem auto 0;
+			text-align: center;
+		}
+		.winner-text h2 { color: #00a907; font-size: 2rem; }
+		.hidden { display: none !important; }
+		.hidden-video { display: none; }
+		@media (max-width: 699px) {
+			.btn-a { max-width: 400px !important; }
+		}
+	</style>
+
+<script src="js/player.js" async=""></script><script src="js/player.js" async=""></script></head>
+
+
+<body>
+	<main>
+		<div class="main-ct qt1">
+			<a href="#">
+				<img src="images/STAMINA-CDB-1.webp">
+			</a>
+			<p class="qt-title">How old are you?</p>
+			<a href="#" class="bt-q">Over 55</a>
+			<a href="#" class="bt-q">45-54</a>
+			<a href="#" class="bt-q">25-44</a>
+			<a href="#" class="bt-q">Under 25</a>
+			<p class="dsclmer">(WE DON'T ASK FOR EMAILS OR PHONE NUMBERS.)</p>
+		</div>
+
+		<div class="main-ct qt2" style="display: none;">
+			<a href="#">
+				<img src="images/STAMINA-CDB-2.webp">
+			</a>
+			<p class="qt-title">Imagine living without pain or illness, what’s the first thing you’d enjoy?</p>
+			<a href="#" class="bt-q">Spending more time with family and loved ones</a>
+			<a href="#" class="bt-q">Taking a walk, gardening, or enjoying nature</a>
+			<a href="#" class="bt-q">Reconnecting with hobbies or activities I gave up</a>
+			<a href="#" class="bt-q">Waking up and appreciating every moment of the day</a>
+			<p class="dsclmer">(WE DON'T ASK FOR EMAILS OR PHONE NUMBERS.)</p>
+		</div>
+
+		<div class="main-ct qt3" style="display: none;">
+			<a href="#">
+				<img src="images/STAMINA-CDB-3.webp">
+			</a>
+			<p class="qt-title">What is the biggest challenge you’re facing right now?</p>
+			<a href="#" class="bt-q">Physical Pain or Disease<br><span>“I want relief from chronic discomfort or pain.””</span></a>
+			<a href="#" class="bt-q">Emotional Struggles<br><span>“I feel stressed, anxious, or overwhelmed.”</span></a>
+			<a href="#" class="bt-q">Energy Issues<br><span>“I’m constantly tired or drained.”</span></a>
+			<a href="#" class="bt-q">Spiritual Disconnect<br><span>“I want to feel closer to God and aligned with His plan.”</span></a>
+			<p class="dsclmer">(WE DON'T ASK FOR EMAILS OR PHONE NUMBERS.)</p>
+		</div>
+
+		<div class="main-ct qt4" style="display: none;">
+			<img src="images/STAMINA-CDB-FINAL.webp">
+			<p class="qt-title">CONGRATULATIONS!</p>
+			<p class="qt-text">Your answers reveal that you’re ready to experience the power of divine healing hidden in the Bible. <span style="color: rgb(211, 42, 42);">This special presentation used to cost $127, but today you can watch it FREE! Just make sure to watch all the way to the end because there are only a few spots left. Tap the button below to watch the FREE video. Learn how this Bible secret can help erase pain and sickness from your body starting TONIGHT.<br>
+</span></p>
+			<a href="#" class="bt-watch reveal-template">>>> Watch the free presentation</a>
+			<div class="c-video-wrapper hidden-video" style="margin-top: 0; margin-bottom: 3rem;">
+				<div style="margin-top:0;">
+					<div id="vid_678d52267d4d76738bf84c7b" style="position: relative; width: 100%; padding: 177.59259259259258% 0 0;"> <img id="thumb_678d52267d4d76738bf84c7b" src="https://images.converteai.net/26f2d0b0-a4bd-4f21-94a5-cbda8900ff31/players/678d52267d4d76738bf84c7b/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> <div id="backdrop_678d52267d4d76738bf84c7b" style=" -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%; "></div> </div> <script type="text/javascript" id="scr_678d52267d4d76738bf84c7b"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/26f2d0b0-a4bd-4f21-94a5-cbda8900ff31/players/678d52267d4d76738bf84c7b/player.js", s.async=!0,document.head.appendChild(s); </script> <style> .elementor-element:has(#smartplayer) { width: 100%; } </style>
+				</div>
+			</div>
+			<a href="#" class="ref">Scientific References</a>
+			<img src="Screenshot_2023-02-22_at_17-09-26.avif">
+		</div>
+	</main>
+	<footer class="quiz-template">
+		<div class="ct">
+			<a href="https://scoreboosternow.com/privacy" class="links">Privacy</a> | <a href="https://scoreboosternow.com/terms" class="links">Terms</a>
+			<p>Copyright 2023 - All Rights Reserved</p>
+		</div>
+	</footer>
+
+	<section id="topbar" class="topbar imported-template" style="padding: 10px; background-color: #cb0000; color: white; text-align: center; margin-bottom: 2em;">
+		<div class="top-b">
+			<h3 style="font-size: 1rem; margin: 0;">This Presentation Will Be Available Until: <span class="date-s" style="font-weight: bold; margin: 0;">12/19/2024</span></h3>
+		</div>
+	</section>
+
+	<section id="home" class="s-vsl imported-template">
+		<div class="page-padding">
+			<div class="c-vsl_headers"></div>
+			<div class="c-video-wrapper">
+				<div style="margin-top:0;">
+					<div id="vid_678d52267d4d76738bf84c7b" style="position: relative; width: 100%; padding: 177.59259259259258% 0 0;"> <img id="thumb_678d52267d4d76738bf84c7b" src="https://images.converteai.net/26f2d0b0-a4bd-4f21-94a5-cbda8900ff31/players/678d52267d4d76738bf84c7b/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> <div id="backdrop_678d52267d4d76738bf84c7b" style=" -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%; "></div> </div> <script type="text/javascript" id="scr_678d52267d4d76738bf84c7b"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/26f2d0b0-a4bd-4f21-94a5-cbda8900ff31/players/678d52267d4d76738bf84c7b/player.js", s.async=!0,document.head.appendChild(s); </script> <style> .elementor-element:has(#smartplayer) { width: 100%; } </style>
+			</div>
+			<div class="winner-text" style="display: none;">
+				<p style="font-size: 1.4rem; color: #00a907;"><strong>Congratulation! You WON a Free Bottle!</strong></p>
+				<a href="https://www.enxnwk3aa2.com/LR9KH1/2CX4GPL/" class="btn-a">
+					<img src="images/btn-get-free.webp" width="497" height="111" style="max-width: 100%; height: auto;">
+				</a>
+
+				<div class="timer-box">
+					<p>Act Quickly!<br>This SUPER Offer Expires in <span id="timer" style="color:red; font-weight: bold;">2:0</span></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="imported-template">
+		<div class="position-relative overflow-hidden text-black p-3 footer-section text-center">
+			<div class="container">
+				<div class="row menu-row">
+					<div class="col-12">
+						<p>
+							<br><br>
+							<a class="footer-link" target="_blank" href="https://scoreboosternow.com/privacy">Contact</a>
+							<a class="footer-link" target="_blank" href="https://scoreboosternow.com/privacy">References</a>
+							<a class="footer-link" target="_blank" href="https://scoreboosternow.com/terms">Terms of Use</a>
+							<a class="footer-link" target="_blank" href="https://scoreboosternow.com/responsibility">Disclaimer</a>
+							<a class="footer-link" target="_blank" href="https://scoreboosternow.com/privacy">Privacy Policy</a>
+							<a class="footer-link" target="_blank" href="https://scoreboosternow.com/terms">Refund Policy</a>
+							<a class="footer-link" target="_blank" href="https://scoreboosternow.com/terms">Shipping Policy</a>
+							<a class="footer-link" target="_blank" href="https://scoreboosternow.com/terms">Affiliates</a>
+						</p>
+					</div>
+				</div>
+				<div class="row disclaimer-row">
+					<div class="col-12">
+						<p><u>Statements on this website have not been evaluated by the Food and Drug Administration. Products are not intended to diagnose, treat, cure or prevent any disease. If you are pregnant, nursing, taking medication, or have a medical condition, consult your physician before using our products.</u></p>
+					</div>
+				</div>
+				<div class="pt-3 m-3 text-center">
+					<b>We Take Spam Seriously!</b> <a href="https://scoreboosternow.com/unsubscribe.php"><u>Click here</u></a> to report spam!
+				</div>
+				<p> Copyright © 2025 - All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		var btQa = document.querySelectorAll('.qt1 .bt-q');
+		var btQb = document.querySelectorAll('.qt2 .bt-q');
+		var btQc = document.querySelectorAll('.qt3 .bt-q');
+
+		let divQa = document.querySelector('.qt1');
+		let divQb = document.querySelector('.qt2');
+		let divQc = document.querySelector('.qt3');
+		let divQd = document.querySelector('.qt4');
+
+		let revealBtn = document.querySelector('.reveal-template');
+		let impTemp = document.querySelectorAll('.imported-template');
+		let quizTemp = document.querySelectorAll('.quiz-template');
+		let hidVideo = document.querySelector('.hidden-video');
+
+		for (var i = 0, len = btQa.length; i < len; i++) {
+			btQa[i].addEventListener("click", () => {
+				divQa.style.display = "none";
+				divQb.style.display = "block";
+			});
+		};
+		for (var i = 0, len = btQb.length; i < len; i++) {
+			btQb[i].addEventListener("click", () => {
+				divQb.style.display = "none";
+				divQc.style.display = "block";
+			});
+		}
+		for (var i = 0, len = btQc.length; i < len; i++) {
+			btQc[i].addEventListener("click", () => {
+				divQc.style.display = "none";
+				divQd.style.display = "block";
+			});
+		}
+
+		revealBtn.addEventListener("click", () => {
+			hidVideo.style.display = "block";
+			revealBtn.style.display = "none";
+		});
+	</script>
+
+		<script type="text/javascript">
+		//Time to button appear
+		//var clickVideo = document.querySelector(".c-video");
+		var clickBtn = document.querySelector(".winner-text");
+
+		setTimeout(function() {
+			clickBtn.style.display = "block";
+			startTimer();
+		}, 3024000);
+
+		// Show date
+		const todayFormat = () => {
+			let today = new Date();
+			var day = today.getDate();
+			var month = today.getMonth() + 1;
+			let year = today.getFullYear();
+			let dateFormat = month + "/" + day + "/" + year;
+			return dateFormat;
+		};
+		document.querySelector(".date-s").innerHTML = todayFormat();
+	</script>
+	<script type="text/javascript">
+		// Timer Countdown
+		var timerSpan = document.getElementById('timer');
+		timerSpan.innerHTML = 02 + ":" + 00;
+
+		function startTimer() {
+			var presentTime = timerSpan.innerHTML;
+			var timeArray = presentTime.split(/[:]+/);
+			var m = timeArray[0];
+			var s = checkSecond((timeArray[1] - 1));
+			if (s==59) {
+				m=m-1
+			}
+			if (m<0) {
+				//clickBtn.classList.add('hidden');
+				return
+			}
+
+			timerSpan.innerHTML = m + ":" + s;
+			console.log(m)
+			setTimeout(startTimer, 1000);
+		}
+
+		function checkSecond(sec) {
+			if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
+			if (sec < 0) {sec = "59"};
+			return sec;
+		}
+	</script>
+<script>
+// Define the prefix array.
+const prefix = ["https://checkout.healingapp.online/"];
+
+// Get all UTM URL parameters.
+function getParams() {
+  const url = new URL(window.location.href);
+  const params = url.searchParams;
+  let queryParams = "";
+
+  // Loop through all search parameters.
+  for (const [key, value] of params) {
+    if (key.startsWith("utm_")) {
+      queryParams += `&${key}=${value}`;
+    }
+  }
+
+  // Return UTM parameters without the leading '&'.
+  return queryParams.length > 0 ? queryParams.substring(1) : "";
+}
+
+// Append the parameters to the href attributes of all links that match the prefix array.
+function appendParamsToLinks() {
+  const links = document.querySelectorAll("a");
+
+  links.forEach((link) => {
+    for (const prefixItem of prefix) {
+      if (link.href.indexOf(prefixItem) !== -1) {
+        const params = getParams();
+        const url = new URL(link.href);
+
+        // Prevent duplicate UTM parameters.
+        const existingParams = Array.from(url.searchParams.keys()).filter((key) =>
+          key.startsWith("utm_")
+        );
+        if (existingParams.length === 0 && params) {
+          // Append UTM parameters if they are not already present.
+          link.href += url.search ? `&${params}` : `?${params}`;
+        }
+        break;
+      }
+    }
+  });
+}
+
+// Call the appendParamsToLinks function on page load.
+window.addEventListener("load", appendParamsToLinks);
+</script>
+
+
+	<script type="text/javascript" src="js/crypto-js.min.js"></script>
+
+</body></html>
